@@ -15,7 +15,7 @@ const LeaveCallButton = () => {
 };
 
 export const leaveCallHandler = () => {
-  const siteURL = window.location.origin + "/prototype";
+  const siteURL = window.location.origin + "/image-ar-matcher";
   window.location.href = siteURL;
 };
 
