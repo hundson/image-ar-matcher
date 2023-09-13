@@ -54,6 +54,7 @@ export const connectWithSocketIOServer = () => {
 
   socket.on("user-disconnected", (data) => {
     webRTCHandler.removePeerConnection(data);
+    leaveCallHandler();
   });
 
   socket.on("ar-image-matcher", () => {
