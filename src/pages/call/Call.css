@@ -1,0 +1,233 @@
+.call_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.message_container {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  background: rgba(0, 188, 164, 0.1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e5e5e5;
+  border-radius: 10px;
+}
+
+.loading_overlay_container {
+  width: 100%;
+  height: 100vh;
+  background: rgb(10, 152, 218);
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #0052c9; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.participants_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: flex-start;
+  height: 50%;
+}
+
+.participants_paragraph {
+  color: black;
+  text-align: start;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.5s;
+  margin: 0 40px;
+  padding: 10px 0px;
+}
+
+.participants_paragraph:hover {
+  background-color: #e5e5e5;
+  border-radius: 8px;
+}
+
+.participants_separator_line {
+  width: calc(100% - 80px);
+  height: 2px;
+  background-color: #e5e5e5;
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.participants_section_container {
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.participants_label_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.participants_label_paragraph {
+  font-weight: 700;
+  color: #9ca5ab;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+.video_buttons_container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.video_button_container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video_button_image {
+  height: 80%;
+  border-radius: 25px;
+  transition: 0.3s;
+  background: whitesmoke;
+}
+
+.video_button_image:hover {
+  background: cornflowerblue;
+  border-radius: 25px;
+}
+
+.video_button_image:active {
+  transition: 0.3s;
+  background: white;
+}
+
+.video_button_end {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 65px;
+  border: none;
+  color: white;
+  background: #fc5d5b;
+  box-shadow: 0px 3px 30px rgba(252, 93, 91, 0.1);
+  transition: 0.2s;
+}
+
+.video_button_end:hover {
+  background: red;
+}
+
+.participants {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.participant {
+  flex-grow: 1;
+}
+
+.video {
+  display: inline-block;
+  width: 70%;
+  height: 70%;
+  position: relative;
+  margin-top: 18%;
+}
+
+.call_label {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  z-index: 4;
+}
+
+.call_label_paragraph {
+  font-size: 17px;
+  color: white;
+  margin-top: 0;
+  padding: 18px 38px;
+  background: linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
+  border-radius: 0px 0px 15px 15px;
+}
+
+.ar_output_container {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ar_output_canvas {
+  /* width: 100%; */
+  height: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.video_track_container {
+  width: 50%;
+  height: 40%;
+  position: relative;
+  text-align: center;
+}
+
+.video_section_container {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
